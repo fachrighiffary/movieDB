@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import Item from "components/Item";
 import Label from "components/Label";
 import Carousel from "react-native-anchor-carousel";
 import CardMovie from "./atoms/card-movie";
 
-import { LIST_MOVIE } from "api/";
+import { useEffect, useState } from "react";
+import { getData, LIST_MOVIE } from "api/";
 import { ActivityIndicator, Dimensions, StyleSheet } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 import { colors } from "utils/colors";
 import { onDataMovie } from "../../Redux/actions/movieAction";
-import { getData } from "api/";
 
 const DeviceWidth = Dimensions.get("window").width;
 

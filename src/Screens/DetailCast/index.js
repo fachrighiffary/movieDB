@@ -2,14 +2,7 @@ import React, { useEffect, useState } from "react";
 import Label from "components/Label";
 import Item from "components/Item";
 
-import {
-  Image,
-  LogBox,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View
-} from "react-native";
+import { Image, LogBox, ScrollView, StyleSheet } from "react-native";
 import { colors } from "utils/colors";
 import { getData } from "api/";
 import ListActing from "./atoms/list-acting";

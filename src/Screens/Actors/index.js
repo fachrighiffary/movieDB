@@ -1,10 +1,12 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Item from "components/Item";
-import { colors } from "utils/colors";
 import Label from "components/Label";
-import { getData } from "api/";
 import CardActors from "./atoms/card-actors";
+
+import { getData } from "api/";
+import { useEffect, useState } from "react";
+import { StyleSheet } from "react-native";
+import { colors } from "utils/colors";
 
 const Actors = ({ navigation }) => {
   const [data, setData] = useState([]);

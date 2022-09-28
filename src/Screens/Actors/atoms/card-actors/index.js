@@ -1,16 +1,13 @@
 import React from "react";
-import Label from "components/Label";
 import Item from "components/Item";
+import Label from "components/Label";
 
 import {
   ActivityIndicator,
-  Alert,
   FlatList,
   Image,
   StyleSheet,
-  Text,
-  TouchableOpacity,
-  View
+  TouchableOpacity
 } from "react-native";
 import { colors } from "utils/colors";
 
@@ -25,8 +22,6 @@ const CardActors = ({ data, navigation, getData, loadMore }) => {
         <Item>
           {loadMore ? <ActivityIndicator color="#4d2e9b" size="large" /> : null}
         </Item>}
-      onEndReached={Alert.alert("sudah sampai bawah")}
-      onEndReachedThreshold={1}
       renderItem={({ item }) => {
         return (
           <TouchableOpacity
